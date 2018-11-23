@@ -170,9 +170,11 @@ My writing tools are pretty primitive, I just use TextMate or SublimeText when w
 
 
 
-## To-Do items
+## Amazon links in the book
 
-The To-Do List for this project is currently in a file named TODO.txt. I’ll eventually move it into a list off Github “issues.”
+When I link to a book on Amazon, I use short links that they generate for me as part of their affiliate program. I try not to overdo that, but I also hope they’ll generate a little bit of money to help with the costs of the book’s website (paying for domain names and hosting). As a matter of integrity, I only link to books that I like or have written (which I presumably like).
+
+
 
 
 

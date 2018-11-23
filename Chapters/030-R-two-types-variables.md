@@ -86,6 +86,25 @@ As before:
 
 
 
+## Deferred initialization of `val`
+
+Per [Kotlin in Action](https://amzn.to/2DJtTAW), “a `val` variable must be initialized exactly once during the execution of the block where it’s defined ... but you can initialize it with different values depending on some condition.” Examples:
+
+````
+val name: String
+val num: Int
+
+val r = (1..10).shuffled().first()
+
+// assign `name` and `num`
+name = if (r % 2 == 0) "Alvin" else "Alexander"
+num = r
+
+println("name = $name, num = $num")
+````
+
+
+
 ## A note about `val` fields in the REPL
 
 You can’t reassign a `val` field in the REPL:
