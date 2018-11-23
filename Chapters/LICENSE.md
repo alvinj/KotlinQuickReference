@@ -1,12 +1,26 @@
-Everything in this book — __with the exception of the book cover__ — is released under the [Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). The license is described in full detail below and at that URL.
+# License
 
-To be clear, if you decide to fork this project to create your own version of this book you’ll need to use a different cover image. The cover image is only included in this repository because that’s what the Gitbook software requires to build the website and ebooks.
+Everything in this book — __with the exception of the book cover__ — is released under the [Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). The license is described in full detail below and at that URL.
 
 For those viewing a print version of this book, here are those URLs:
 
 - Alvin Alexander’s website: https://alvinalexander.com
 - The *Kotlin Quick Reference* website: http://kotlin-quick-reference.com
 - The Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/)
+
+
+
+## The cover image
+
+If you want to fork the project that’s fine, but it doesn’t make sense to have the same cover image on different books, so that’s one reason why the cover image is not open source. That, and I paid a designer to create it and a stock image company for part of the artwork. So, if you fork the project, create your own cover.
+
+>I wouldn’t include the image in this repository if I didn’t have to, but Gitbook requires it.
+
+If you’re interested in a good designer, [Alex Blokowsky on 99designs.com](https://99designs.com/profiles/blokowsky) created this cover image for me.
+
+
+
+## The license
 
 The text of the Attribution-ShareAlike 4.0 International license follows.
 
