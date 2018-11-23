@@ -1,0 +1,48 @@
+To-Do List
+==========
+
+This is a list of features that still need to be added to the book.
+
+- Add the license agreement and copyright statement
+
+- Android coverage
+
+- Kotlin documentation
+
+- `as` operator for casting
+    - safe casting with `as?`
+        val location: Any = "London"
+        val safeString: String? = location as? String
+        val safeInt: Int? = location as? Int
+
+- `is` operator
+- `in` operator, which i use with `when`
+
+- discuss class hierarchies (Any, Unit, Collections):
+    - per docs (https://kotlinlang.org/docs/reference/collections.html), List inherits from Collection<T> and that in turn inherits from Iterable<T>
+    - `val location: Any = "London"`
+
+- note that you can also use Java’s Optional:
+    val optionalName: Optional<String> = Optional.of("william")
+    val empty: Optional<String> = Optional.empty()
+
+- String? vs Optional:
+    fun lookupAddress(postcode: String): String?
+    fun lookupAddress(postcode: String): Optional<String>
+
+- other operators, keywords, and functions:
+    - apply
+    - run
+    - let
+    - lazy
+    - with
+    - use
+    - repeat
+    - require
+
+- Coroutines (async programming)
+    - https://kotlinlang.org/docs/reference/coroutines-overview.html
+
+
+
+

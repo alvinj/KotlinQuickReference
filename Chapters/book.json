@@ -1,0 +1,11 @@
+{
+    "title": "Kotlin Quick Reference",
+    "author": "Alvin Alexander",
+    "description": "A brief introduction to the Kotlin programming language",
+    "plugins": ["localized-footer"],
+    "localized-footer": {
+      "hline": true,
+      "filename": "./footer.md"
+    }
+}
+
