@@ -28,6 +28,17 @@ On a personal note, I’m creating this for myself. What happens to me is that I
 
 
 
+## Contributing
+
+If you’re interested in contributing to this book, please read the notes that follow about writing styles, coding standards, examples, and building the book and website.
+
+To find areas where you can contribute:
+
+- Search the *Chapters* directory for `TODO` tags (i.e., `grep TODO *.md`)
+- Look at the [open issues](https://github.com/alvinj/KotlinQuickReference/issues) for this project on Github
+
+
+
 ## Writing
 
 The writing style for this book should be very terse, “minimalist” if you prefer. I usually start by writing a few source code examples, and then put as few words around it as necessary. Again, the target audience is an experienced developer who just needs to see the syntax and examples.
