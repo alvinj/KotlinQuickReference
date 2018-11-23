@@ -30,7 +30,7 @@ On a personal note, I’m creating this for myself. What happens to me is that I
 
 ## Writing
 
-The writing style for this book should be very terse. I usually start by writing a few source code examples, and then put as few words around it as necessary. Again, the target audience is an experienced developer who just needs to see the syntax and examples.
+The writing style for this book should be very terse, “minimalist” if you prefer. I usually start by writing a few source code examples, and then put as few words around it as necessary. Again, the target audience is an experienced developer who just needs to see the syntax and examples.
 
 In regards to the Markdown files:
 
@@ -42,11 +42,18 @@ In regards to writing:
 - Remember that this content will be published as a website and ebooks; don’t write things like “Earlier on this page” or anything else that implies a web format
 - Don’t copy source code or verbiage from other sources; see the next section for coding examples that I typically use
 
+Some of the current lessons are a little too verbose, especially the early ones. For examples of my preferred minimalist writing style for this book, see these lessons:
+
+- Data classes
+- Open and final classes
+- Getter/setter properties
+- `when` expressions 
+
 
 
 # Good examples to use in a book
 
-Examples that all programmers can like and understand:
+If you need ideas for source code examples, I find that these are examples that all programmers can relate to and understand:
 
 - Anything related to:
     - Pizza and a pizza store
@@ -58,7 +65,7 @@ Examples that all programmers can like and understand:
     - Social networking (people, friends, post/tweet, comments, likes)
 - `Person`, `Employee`
 - Math things (Pi, Fibonacci, Checksum)
-- Useful things like Json processing, which could be Twitter/Facebook clients
+- Networking, REST, and JSON processing, for example, Twitter/Facebook/Github clients
 - Concepts like a To-Do List or a Blog (writing your own blogging app)
 
 
@@ -85,6 +92,31 @@ if (test1) {
     doZ()
 }
 ````
+
+- Functions declared like this:
+
+````
+// single-expression syntax
+fun plus1(i: Int) = i + 1
+fun plus1(i: Int): Int = i + 1
+
+// multiline syntax
+fun plus1(i: Int): Int {
+    return i + 1
+}
+````
+
+- Class declared on one line or multiple lines:
+
+````
+class Person (var firstName: String, var lastName: String)
+
+class Person (
+    var firstName: String, 
+    var lastName: String
+)
+````
+
 
 
 ## Build notes
