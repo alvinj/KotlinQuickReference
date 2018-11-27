@@ -36,7 +36,7 @@ class Person public @Inject constructor (name: String) { ... }
 class Person @JvmOverloads constructor (name: String, age: Int) { ... }
 ````
 
-Primary constructor initialization code goes in `init` block:
+Primary constructor initialization code goes in an `init` block:
 
 ````
 class Person (name: String) {

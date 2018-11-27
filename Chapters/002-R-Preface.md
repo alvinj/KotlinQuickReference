@@ -10,7 +10,7 @@ Since 2011 I’ve been using the [Scala programming language](https://www.scala-
 - [Functional Programming, Simplified](http://kbhr.co/hk-fps)
 - [Hello, Scala](http://kbhr.co/hk-hs)
 
-The *only* problem I have with Scala is that I enjoy developing Android applications, and with the exception of the [Scala on Android project](http://scala-android.org/) — which, at the time of this writing, hasn’t been updated in 18 months) — there isn’t a simple way to create Android applications with Scala. So when I looked into [Kotlin](https://kotlinlang.org/) and saw that it was very similar to Scala, well, I was pretty happy.
+The *only* problem I have with Scala is that I enjoy developing Android applications, and with the exception of the [Scala on Android project](http://scala-android.org/) — which, at the time of this writing, hasn’t been updated in 18 months — there isn’t a simple way to create Android applications with Scala. So when I looked into [Kotlin](https://kotlinlang.org/) and saw that it was very similar to Scala, well, I was pretty happy.
 
 
 
