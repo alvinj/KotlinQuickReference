@@ -11,7 +11,7 @@ This is Release 0.1 of Kotlin Quick Reference.
 
 
 
-## Loving Scala and Kotlin
+## Loving Scala ... and Kotlin
 
 Since 2011 I’ve been using the [Scala programming language](https://www.scala-lang.org/). I fell in love with as soon as I saw it, so much so that I wrote three books about it:
 
