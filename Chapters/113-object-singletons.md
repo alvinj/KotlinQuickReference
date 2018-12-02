@@ -2,7 +2,9 @@
 description: This page introduces Kotlin enumerations, and further shows how to create a complete OOP 'Pizza' class that uses those enumerations.
 ---
 
-<!-- WORKING, EARLY -->
+<!-- 
+    TODO this lesson needs work, such as showing a Factory pattern example
+-->
 
 
 # Create Singletons with Object
@@ -11,22 +13,24 @@ description: This page introduces Kotlin enumerations, and further shows how to 
 
 ## Key points
 
-- Use `object` instead of `class` to create a singleton
+- Use `object` instead of `class` to create a singleton (single instance of that class)
 - Useful for “utility” classes
-- Combines a class declaration with a single instance of that class
 
 Rules:
 
 - No constructor parameters
 - Can contain:
     - Properties
-    - Methods
+    - Functions
     - Initializer blocks
-- Can inherit from interfaces and classes
+- Objects can inherit from interfaces and classes
+- There is a difference between object *expressions* and *declarations*
+    - Expressions are used on the right hand side of expressions
+    - Declarations are when you use `object` to create a singleton or companion object
 
 
 
-## Examples
+## Singleton example
 
 ````
 object MathUtils {
@@ -52,19 +56,41 @@ MathUtils init was called
 
 
 
-object PizzaUtils {
-    def addTopping(p: Pizza, t: Topping): Pizza = ...
-    def removeTopping(p: Pizza, t: Topping): Pizza = ...
-    def removeAllToppings(p: Pizza): Pizza = ...
-}
+## Inheritance
 
-Or this one:
+This is from the Kotlin Language Reference (TODO: write my own example):
 
-object FileUtils {
-    def readTextFileAsString(filename: String): Try[String] = ...
-    def copyFile(srcFile: File, destFile: File): Try[Boolean] = ...
-    def readFileToByteArray(file: File): Try[Array[Byte]] = ...
-    def readFileToString(file: File): Try[String] = ...
-    def readFileToString(file: File, encoding: String): Try[String] = ...
-    def readLines(file: File, encoding: String): Try[List[String]] = ...
+````
+// objects can have supertypes:
+object DefaultListener : MouseAdapter() {
+    override fun mouseClicked(e: MouseEvent) { ... }
+    override fun mouseEntered(e: MouseEvent) { ... }
 }
+````
+
+
+<!--
+## Object expressions (TODO)
+
+There are a few things you can do with the `object` keyword on the right hand side of an expression.
+
+TODO: Write my own. This is from the Kotlin Language Reference:
+
+````
+// “just an object, with no trivial supertypes”
+fun foo() {
+    val adHoc = object {
+        var x: Int = 0
+        var y: Int = 0
+    }
+    print(adHoc.x + adHoc.y) 
+}
+````
+-->
+
+
+
+
+
+
+

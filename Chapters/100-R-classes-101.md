@@ -7,6 +7,12 @@ description: This page shows examples of how to create Kotlin classes, including
     TODO: discuss class annotations (more complicated examples of syntax)
 -->
 
+<!--
+TODO: `internal` keyword on constructor, such as this example:
+class TabAdapter internal constructor(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {...
+// internal is visible everywhere in the same “module”
+// see https://kotlinlang.org/docs/reference/visibility-modifiers.html
+-->
 
 
 # Constructors and Members
@@ -200,6 +206,26 @@ class Customer public @Inject constructor(name: String) { ... }
                               -----------
 ````
 
+
+## Visibility modifiers
+
+Visibility modifiers are:
+
+- private
+- protected 
+- internal
+- public
+
+Per [this kotlinlang.org link](https://kotlinlang.org/docs/reference/visibility-modifiers.html#modules), “classes, objects, interfaces, constructors, functions, properties and their setters can have visibility modifiers.”
+
+Here’s an example of `internal`:
+
+````
+// `internal` is visible everywhere in the same “module”
+// see https://kotlinlang.org/docs/reference/visibility-modifiers.html
+class TabAdapter internal constructor(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {...
+                 --------
+````
 
 
 

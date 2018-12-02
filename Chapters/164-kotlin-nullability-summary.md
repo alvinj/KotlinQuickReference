@@ -15,6 +15,21 @@ description: TODO
 Examples of working with nullable types:
 
 ````
+> val s: String? = "Rocky"   //nullable type
+
+> s?.length                  //safe-call operator
+5
+
+> s?.length ?: 0             //elvis operator
+5
+
+> s!!.length                 //force operator
+5
+````
+
+More:
+
+````
 // Nullable type
 var s: String? = null
 

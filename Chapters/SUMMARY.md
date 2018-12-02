@@ -72,19 +72,18 @@
 
 - [Miscellaneous](TODO.md)
     - [A Swing example](252-R-swing-example.md)
-    - [Build tools](TODO.md)
-    - [Idioms](TODO.md)
+    - [Build tools](800-build-tools.md)
+    - [Idioms](900-idioms.md)
     - [An OOP example](310-oop-pizza-example.md)
     - [An FP example](TODO.md)
+    - [Command line](850-command-line.md)
 
 
 - [Android](600-android.md)
-    - [Android chapter 1](TODO.md)
 
 
 - [Contributors](999-contributors.md)
 - [License](LICENSE.md)
-
 - [About](ABOUT.md)
 
 

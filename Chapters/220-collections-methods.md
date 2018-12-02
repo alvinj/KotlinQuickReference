@@ -128,5 +128,28 @@ names.zip(a)               //[(joel, 10), (ed, 20), (chris, 30), (maurice, 40)]
 
 
 
+## Convert a list to a String
+
+Convert a list/array to a `String`:
+
+````
+val nums = listOf(1,2,3,4,5)
+
+> nums.joinToString()
+1, 2, 3, 4, 5
+
+> nums.joinToString(
+    separator = ", ",
+    prefix = "[",
+    postfix = "]",
+    limit = 3,
+    truncated = "there’s more ..."
+)
+[1, 2, 3, there’s more ...]
+````
+
+
+
+
 
 

@@ -2,7 +2,6 @@
 description: This page shares a Kotlin 'Hello, world' example.
 ---
 
-<!-- A GOOD FIRST DRAFT -->
 
 # Hello, World
 
