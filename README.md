@@ -11,14 +11,14 @@ If it helps to have a model in mind, this book is something like a large cheat s
 
 ## Target audience
 
-The target audience for this book is someone who already knows languages like Java and Scala and just needs a very quick reference of Kotlin’s syntax and some examples so they can be productive. For instance, I assume the reader already knows what classes are and what they’re good for; I make no attempt to discuss OOP theory. It’s more like, “Here’s Kotlin’s syntax to create classes, constructors, secondary constructors, and methods, and here are a few examples.” In regards to Android development, I assume the reader has already developed Android applications with Java, and just needs to see what’s different with Android/Kotlin.
+The target audience for this book is someone who already knows languages like Java and Scala and just needs a very quick reference to Kotlin’s syntax and some corresponding examples so they can be productive. For instance, I assume the reader already knows what classes are and what they’re good for; I make no attempt to discuss OOP theory. The idea of the book is more like, “Here is Kotlin’s syntax to create classes, constructors, secondary constructors, and methods, and here are a few examples of each.” For the Android chapters I assume the reader has already developed Android applications with Java, and just needs to see what’s different with Android/Kotlin.
 
-Because of that target audience, this book is *not* intended for someone who needs a lot of explanation. If someone needs an “Introduction to Kotlin” book, [Kotlin in Action](https://amzn.to/2DJtTAW) is a good book for that audience.
+Because of that target audience, this book is *not* intended for someone who needs a lot of explanation or discussion. If someone needs an “Introduction to Kotlin” book, there are several good books for that audience, including [Kotlin in Action](https://amzn.to/2DJtTAW).
 
-On a personal note, I’m creating this for myself. What happens to me is that I often work with a technology like Kotlin for a while, then have to get away from it for a while, and a resource like this is helpful for when I start working with it again. Common needs for me are/were:
+On a personal note, I’m creating this for a future version of myself. What happens to me is that I often work with a technology like Kotlin for a while, then have to get away from it for a while, and a resource like this is helpful for when I start working with it again some time in the future. Common needs for me are/were:
 
-- I need to see nullability examples
-- I need to see collections examples (List, Array, Map, etc.)
+- I need to see the nullability syntax and examples
+- I need to see collections examples (lists, arrays, maps, etc.)
 - What can I do with Kotlin interfaces?
 - How do I pass a function to a function?
 - How do secondary constructors work?
@@ -30,12 +30,14 @@ On a personal note, I’m creating this for myself. What happens to me is that I
 
 ## Contributing
 
-If you’re interested in contributing to this book, please read the notes that follow about writing styles, coding standards, examples, and building the book and website.
+If you’re interested in contributing to this book, please read the notes that follow about writing style, coding standards, examples, and building the book and website.
 
 To find areas where you can contribute:
 
 - Search the *Chapters* directory for `TODO` tags (i.e., `grep TODO *.md`)
 - Look at the [open issues](https://github.com/alvinj/KotlinQuickReference/issues) for this project on Github
+
+I added a Contributors chapter to the book, and for those who contribute I’ll be glad to link to your Twitter or Github profile.
 
 
 
@@ -50,7 +52,7 @@ In regards to the Markdown files:
 
 In regards to writing:
 
-- Remember that this content will be published as a website and ebooks; don’t write things like “Earlier on this page” or anything else that implies a web format
+- Remember that this content will be published both as a website and in e-book format, so don’t write things like “Earlier on this page” or anything else that implies a web format
 - Don’t copy source code or verbiage from other sources; see the next section for coding examples that I typically use
 
 Some of the current lessons are a little too verbose, especially the early ones. For examples of my preferred minimalist writing style for this book, see these lessons:
@@ -64,7 +66,7 @@ Some of the current lessons are a little too verbose, especially the early ones.
 
 # Good examples to use in a book
 
-If you need ideas for source code examples, I find that these are examples that all programmers can relate to and understand:
+If you need ideas for source code examples, I find that programmers can relate to examples like these:
 
 - Anything related to:
     - Pizza and a pizza store
@@ -78,10 +80,12 @@ If you need ideas for source code examples, I find that these are examples that 
 - Math things (Pi, Fibonacci, Checksum)
 - Networking, REST, and JSON processing, for example, Twitter/Facebook/Github clients
 - Concepts like a To-Do List or a Blog (writing your own blogging app)
+- Money and currency
+- Date and time processing
 
 
 
-## Code standards
+## Coding standards
 
 My coding standards in this book are:
 
@@ -104,7 +108,7 @@ if (test1) {
 }
 ````
 
-- Functions declared like this:
+- Functions are declared like this:
 
 ````
 // single-expression syntax
@@ -117,7 +121,7 @@ fun plus1(i: Int): Int {
 }
 ````
 
-- Class declared on one line or multiple lines:
+- Examples of classes declared on one line or multiple lines:
 
 ````
 class Person (var firstName: String, var lastName: String)
@@ -132,20 +136,20 @@ class Person (
 
 ## Build notes
 
-I use the [Gitbook command line tool](https://toolchain.gitbook.com/) to build the book.
+I use the [Gitbook command line tool](https://toolchain.gitbook.com/) to build the book, including the e-books and website.
 
 A few notes about building different versions of the book:
 
-- I use the script *_StartServer.sh* to run the Gitbook server on my system so I can see the book in its HTML/web format while I’m working
-- The PDF is built with this command: `gitbook pdf ./ Kotlin-Quick-Reference.pdf` (there’s a script named *_CreatePdf.sh* for that)
-- The PDF uses the file named cover.jpg as the book cover
+- I use the script *_StartServer.sh* in the *Chapters* directory to run the Gitbook server on my system so I can see the book in its HTML/web format while I’m working
+- There are also scripts to build the PDF (*_CreatePdf.sh*) and MOBI (*_CreateMobi.sh*) versions of the book
+- Per Gitbook standards, the PDF uses the file named *cover.jpg* as the book cover
     - Preferred size: 1800x2360
     - 200x262 for cover_small.jpg
     - see: https://toolchain.gitbook.com/ebook.html
 - `ebook-convert` is required to generate all ebooks (pdf, mobi, epub)
 - You need to run `gitbook install` in the MD files directory to install the “localized-footer” plugin (or remove or comment-out the *book.json* file on your system); I use that plugin to put a footer on the [kotlin-quick-reference.com](http://kotlin-quick-reference.com) website
 
-Per [the Gitbook website](https://toolchain.gitbook.com/ebook.html), here are the commands for building different ebook versions:
+As a little more information about building the book, per [the Gitbook website](https://toolchain.gitbook.com/ebook.html), here are the commands for building different ebook versions:
 
 ````
 // Generate a PDF file
@@ -172,8 +176,11 @@ My writing tools are pretty primitive, I just use TextMate or SublimeText when w
 
 ## Amazon links in the book
 
-When I link to a book on Amazon, I use short links that they generate for me as part of their affiliate program. I try not to overdo that, but I also hope they’ll generate a little bit of money to help with the costs of the book’s website (paying for domain names and hosting). As a matter of integrity, I only link to books that I like or have written (which I presumably like).
+When I link to a book on Amazon, I use the shortened links that they generate for me as part of their affiliate program. I try not to overdo that, but I also hope they’ll generate a little bit of money to help with the costs of the book’s website (paying for domain names and hosting). As a matter of integrity, I only link to books that I have written or otherwise like.
 
+
+Alvin Alexander    
+[alvinalexander.com](https://alvinalexander.com)
 
 
 

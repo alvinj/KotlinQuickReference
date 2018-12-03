@@ -22,6 +22,4 @@ user.lock
 *.log
 *.toc
 *.fdb_latexmk
-*.mobi
 *.bak
-*.pdf
